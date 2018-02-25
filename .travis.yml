@@ -11,9 +11,7 @@ script:
 - mkdir static/images/thumbs
 - go build tools/make_thumbnail.go
 - "./make_thumbnail"
-- rm make_thumbnail
 - hugo
-- ls
 - git add public
 - git commit -m "public"
 deploy:
@@ -23,6 +21,7 @@ deploy:
     secure: gJ/a5AYpDtL7ywGcmVPfYTfLJ9e7PyRXyYR8ctl7vSnNiETnNGltsw89r/rohny6BlY4lqSsY+ua/ZdK6ZjI6E0+9VQuOJdwH/XAjQjMdWNJ3eijYphILIYlvGWtM5wkPhbmhJPcY2smnEqfHw9YQVvcvfLl76+b1i84lajMFarjALLK3GsFlAJR4bSZD8sbRHEotnm2btCpj195rxP5TjpLEdQEp7hNkTnB+3yfvGVIy0kbu01HCPGiuXxkhlVrpSi5Zr7PXUUir9gG4h8xlQ266Pc7C+ppcoegklyXdZSr4o81XcGA1wHtMHmid3Oqliob+2o40fxqJxvjgH9UBSqqRIzYEv0Xm82fCZDiVHoS4AxoXvQzpx8mJwsERQTe7vHddgXmW7E0xNp05T+P3p+xDHrcEWm10HxqJEEwoszqjvd1qCt8NlJsaWytvpLomdpnQnGi136EbWCPm8BPHo3i02vAxLnNfm3tIFFWH2lvddOJRPEoLJ0JLlnGX/rgxyZdsqT4ZHYEWNkz20heo2j/kP7cgs7g5nyxs0XGcWH3QJ/s2UFy5GHLPPXLk4KZyKadtuWNcul9IajiDm//W+pjy6l+kizgj3CGqNJbh3fGU5YnFzP8uXeTlWMsKM7R/Phj4OfunEIhNXSIedc/v31S06EpTvHhZc9CcZyEe3c=
   bucket: villaashika.net
   region: ap-northeast-1
+  local_dir: public
   acl: public_read
   skip_cleanup: true
   on:
