@@ -1,4 +1,4 @@
-baseurl = "https://villaashika.com/"
+baseurl = "https://s3-ap-northeast-1.amazonaws.com/villaashika-origin/"
 languageCode = "en-us"
 title = "ヴィラあしか島"
 theme = "hugo-strata-theme"
