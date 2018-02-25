@@ -21,6 +21,7 @@ deploy:
   bucket: villaashika-origin
   acl: public_read
   on:
+    branch: test
     repo: ami-GS/Villa-Ashika-island
 notifications:
   email:
