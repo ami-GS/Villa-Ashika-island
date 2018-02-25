@@ -1,0 +1,17 @@
+<section>
+    {{ with .Site.Params.faq.title }}
+        <h2>{{ . }}</h2>
+    {{ end }}
+
+	<div class="row">
+        <br>
+        <p>
+          <ol class="faq">
+	    {{ range .Site.Params.faq.qa }}
+	    <h3>Q. {{ .question | markdownify }}</h3>
+	    <p>A. {{ .answer | markdownify }}</p>
+	    {{ end }}
+        </ol>
+        </p>
+	</div>
+</section>

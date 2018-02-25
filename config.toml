@@ -1,0 +1,178 @@
+baseurl = "https://villaashika.com/"
+languageCode = "en-us"
+title = "ヴィラあしか島"
+theme = "hugo-strata-theme"
+disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+googleAnalytics = ""
+# Define how many posts should appear on a site
+paginate = 6
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Aminaka"
+	description = "Describe your website"
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = []
+	custom_css  = []
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "avatar.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "海鹿島（あしかじま）の民宿・貸別荘"
+		# The icons will be shown if you enter your username
+		twitter = "spf13"
+		github = "ami-GS"
+		airbnbURL = "https://www.airbnb.com"
+		gitlab = ""
+		dribbble = ""
+		facebook = ""
+		googleplus = ""
+		flickr = ""
+		linkedin = ""
+
+		copyright = [
+			"&copy; John Doe",
+			"Design: [HTML5 UP](//html5up.net)",
+			"Demo Images: [Unsplash](//unsplash.com/)"
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "ヴィラあしか島"
+		content = "海の見える宿で銚子を満喫していきませんか？"
+
+	[params.portfolio]
+		hide  = false
+		title = "サービス・特徴一覧"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "fulls/ocean_view.JPG"
+			thumb = "thumbs/ocean_view.JPG"
+			title = "一面に広がるオーシャンビュー"
+			description = "海水浴場が徒歩3分県内！"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/sun_rise.JPG"
+			thumb = "thumbs/sun_rise.JPG"
+			title = "日の出の見える宿"
+			description = "大晦日は日本一早い初日の出をご覧いただけます！"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/BBQ.JPG"
+			thumb = "thumbs/BBQ.JPG"
+			title = "バーベキュー可能！"
+			description = "お庭のバーベキュー場をご自由にお使いいただけます"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/04.jpg"
+			thumb = "thumbs/04.jpg"
+			title = "キッチン・料理器具完備"
+			description = "アメリカ風のキッチンで料理をお楽しみいただけます"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/text_free_wifi.png"
+			thumb = "thumbs/text_free_wifi.png"
+			title = "フリーWiFi"
+			description = "ご自由に快適なWiFiをお使いいただけます"
+
+		[[params.portfolio.gallery]]
+			image = "fulls/06.jpg"
+			thumb = "thumbs/06.jpg"
+			title = "12人同時宿泊可能"
+			description = "※最大収容人数としていますが、和室の使い方次第で若干名の追加が可能です（ご相談ください）"
+
+	[params.recentposts]
+		hide  = false
+		title = "ニュース"
+
+	[params.faq]
+		hide = false
+		title = "よくあるご質問"
+		[[params.faq.qa]]
+			question = "喫煙可能ですか？"
+			answer = "全面禁煙となっています。"
+		[[params.faq.qa]]
+			question = "観光の移動手段には何がありますか？"
+			answer = "徒歩1分のバス、10分の電車が利用可能ですが、お車のご利用をオススメいたします。"
+		[[params.faq.qa]]
+			question = "最寄りのコンビニまでどれくらいかかりますか？"
+			answer = "徒歩で30分、車で5分です。"
+		[[params.faq.qa]]
+			question = "花火はできますか？"
+			answer = "騒音の関係で禁止とさせていただいております。"
+
+		[params.contact]
+		hide  = false
+		title = "連絡先"
+		content = "※ご予約はAirBnBの予約システムからお願い致します。"
+
+		# This can be exact coordinates or a searchable address in google maps
+		# gmaps_address = "39.7889055,-120.5443524"
+		#address = [
+		#	"1234 Somewhere Rd.",
+		#	"Nashville, TN 00000",
+		#	"United States"
+		#]
+		phone = "080-3224-5680"
+
+		# Since this template is static, the contact form uses www.formspree.io as a
+		# proxy. The form makes a POST request to their servers to send the actual
+		# email. Visitors can send up to a 1000 emails each month for free.
+	    #
+	    # What you need to do for the setup?
+	    #
+	    # - set your email address under 'email' below
+	    # - upload the generated site to your server
+	    # - send a dummy email yourself to confirm your account
+	    # - click the confirm link in the email from www.formspree.io
+	    # - you're done. Happy mailing!
+		email = "1991.daiki@gmail.com"
+
+		[params.contact.form]
+			# Set custom strings for the form if your native
+			# language isn't English
+			name = "Name"
+			email = "Email"
+			message = "Message"
+			submit = "Send message"
+
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 1
+
+[[menu.main]]
+	name = "ニュース"
+	url  = "post/"
+	weight = 2
+
+[[menu.main]]
+	name = "内観・外観一覧"
+	url = "view/"
+	weight = 3
+
+[[menu.main]]
+	name = "アルバム"
+	url = "album/"
+	weight = 4
+
+[[menu.main]]
+	name = "旅行のお供に"
+	url = "amazon_links/"
+	weight = 5
