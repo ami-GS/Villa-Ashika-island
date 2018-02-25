@@ -1,4 +1,4 @@
-baseurl = "http://villaashika.net"
+baseurl = "http://villaashika.net/"
 languageCode = "en-us"
 title = "ヴィラあしか島"
 theme = "hugo-strata-theme"
