@@ -18,16 +18,15 @@ script:
 - git commit -m "public"
 deploy:
   provider: s3
-  access_key_id: AKIAJUHFP5LAZFW662LQ
+  access_key_id: AKIAIAUHR4QPOGZWNGAA
   secret_access_key:
-    secure: nGXLcn0QixOg0V9DrDSjG44fPSk6xqaQHXB/tjLFTf21/zhE0d/F783PPiIL2BmSBt9v35criEaT414KgaHnPyCJ/9WDyUn9qtz3nrGrFi5fAmfol8OeeBD0ojDD+CJzUQlaGV6oanA6IWlbSaLZAG6TdvohPfwOntgY7idlZknmTbvniyRGk02a6uZrdYOIJkHxr3z8YNp6JVjhJbhi1KekuYeOjnZ/si9C045Oh4vmIZ+evwEIPpTmx5tJcB2rVaokrBm6rL80tjlJm8XUJlNXm0QGjtWU8vwcjipa57M0dhpE/3Vp9JL7TOMxmA5VP35hl8SAFh7LRSxAepuM/BacUMXdYr/ShOb5t6xk3CAOMs1TuB4BUNoWLQcsjQhr80f4iCtBxqGsYhKrQ5Q1rwfe+u3QwapSe6vmiXnl9AuT7Hlc0zOzRLp3Ub6f/jb2l7C2b0CNi1wbF62G6/LPO7P4P7/TmG0Y+CZW3in3IDjjKzuFITrIzYzcXTqJXeduwhZqsgS5x1G3acOk/+2aYePNd15S37zvXhOnq6A/AJ536XlXR+gBtpfVZbt+FCJo1usFRQMsBOt/mwl1Y1dKv+n+Ia4UtLrP4ZZaveTfdL7B76rLcpkdUsL719mDH8chSqqSqrpGBZhHQMmXN9hxBIdRfWc3U/+qoLnd4Nfvi1E=
-  bucket: villaashika.net.s3-website-ap-northeast-1.amazonaws.com
-  local_dir: public
+    secure: gJ/a5AYpDtL7ywGcmVPfYTfLJ9e7PyRXyYR8ctl7vSnNiETnNGltsw89r/rohny6BlY4lqSsY+ua/ZdK6ZjI6E0+9VQuOJdwH/XAjQjMdWNJ3eijYphILIYlvGWtM5wkPhbmhJPcY2smnEqfHw9YQVvcvfLl76+b1i84lajMFarjALLK3GsFlAJR4bSZD8sbRHEotnm2btCpj195rxP5TjpLEdQEp7hNkTnB+3yfvGVIy0kbu01HCPGiuXxkhlVrpSi5Zr7PXUUir9gG4h8xlQ266Pc7C+ppcoegklyXdZSr4o81XcGA1wHtMHmid3Oqliob+2o40fxqJxvjgH9UBSqqRIzYEv0Xm82fCZDiVHoS4AxoXvQzpx8mJwsERQTe7vHddgXmW7E0xNp05T+P3p+xDHrcEWm10HxqJEEwoszqjvd1qCt8NlJsaWytvpLomdpnQnGi136EbWCPm8BPHo3i02vAxLnNfm3tIFFWH2lvddOJRPEoLJ0JLlnGX/rgxyZdsqT4ZHYEWNkz20heo2j/kP7cgs7g5nyxs0XGcWH3QJ/s2UFy5GHLPPXLk4KZyKadtuWNcul9IajiDm//W+pjy6l+kizgj3CGqNJbh3fGU5YnFzP8uXeTlWMsKM7R/Phj4OfunEIhNXSIedc/v31S06EpTvHhZc9CcZyEe3c=
+  bucket: villaashika.net
   acl: public_read
   skip_cleanup: true
   on:
-    branch: test
     repo: ami-GS/Villa-Ashika-island
+    branch: test
 notifications:
   email:
     on_failure: always
