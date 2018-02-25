@@ -14,6 +14,8 @@ script:
 - rm make_thumbnail
 - hugo
 - ls
+- git add public
+- git commit -m "public"
 deploy:
   provider: s3
   access_key_id: AKIAJUHFP5LAZFW662LQ
