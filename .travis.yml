@@ -21,7 +21,7 @@ deploy:
   access_key_id: AKIAJUHFP5LAZFW662LQ
   secret_access_key:
     secure: nGXLcn0QixOg0V9DrDSjG44fPSk6xqaQHXB/tjLFTf21/zhE0d/F783PPiIL2BmSBt9v35criEaT414KgaHnPyCJ/9WDyUn9qtz3nrGrFi5fAmfol8OeeBD0ojDD+CJzUQlaGV6oanA6IWlbSaLZAG6TdvohPfwOntgY7idlZknmTbvniyRGk02a6uZrdYOIJkHxr3z8YNp6JVjhJbhi1KekuYeOjnZ/si9C045Oh4vmIZ+evwEIPpTmx5tJcB2rVaokrBm6rL80tjlJm8XUJlNXm0QGjtWU8vwcjipa57M0dhpE/3Vp9JL7TOMxmA5VP35hl8SAFh7LRSxAepuM/BacUMXdYr/ShOb5t6xk3CAOMs1TuB4BUNoWLQcsjQhr80f4iCtBxqGsYhKrQ5Q1rwfe+u3QwapSe6vmiXnl9AuT7Hlc0zOzRLp3Ub6f/jb2l7C2b0CNi1wbF62G6/LPO7P4P7/TmG0Y+CZW3in3IDjjKzuFITrIzYzcXTqJXeduwhZqsgS5x1G3acOk/+2aYePNd15S37zvXhOnq6A/AJ536XlXR+gBtpfVZbt+FCJo1usFRQMsBOt/mwl1Y1dKv+n+Ia4UtLrP4ZZaveTfdL7B76rLcpkdUsL719mDH8chSqqSqrpGBZhHQMmXN9hxBIdRfWc3U/+qoLnd4Nfvi1E=
-  bucket: villaashika-origin
+  bucket: villaashika.net
   local_dir: public
   acl: public_read
   on:
