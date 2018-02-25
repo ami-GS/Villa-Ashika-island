@@ -12,7 +12,8 @@ script:
 - echo $PWD
 - mkdir static/images/thumbs
 - go build tools/make_thumbnail.go
-- make_thumbnail
+- ls
+- ./make_thumbnail
 - hugo
 notifications:
   email:
