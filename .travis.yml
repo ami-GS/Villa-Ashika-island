@@ -1,0 +1,26 @@
+language: go
+sudo: false
+dist: trusty
+before_install:
+- export PATH=$PATH:$HOME/.local/bin
+install:
+- go get -v github.com/spf13/hugo
+- git clone https://github.com/digitalcraftsman/hugo-strata-theme themes/hugo-strata-theme
+- go get -t ./...
+script:
+- go build tools/make_thumbnail.go
+- make_thumbnail
+- hugo
+notifications:
+  email:
+    on_failure: always
+deploy:
+  provider: s3
+  access_key_id: AKIAIOJLYSAYJCWSCU2Q
+  secret_access_key:
+    secure: WvLwF+ux39m7BhUNmrKV04RuiVnn3N+IwkYYPav51hPxxCKFIfumW5sR2oXS6shO8mCSZNgdjuDhuXmIp4ODBnPL/Xty1xjRlS/0Q2DAts3tR93/4sGMKGM8FtMHxr6KUx8f83ZakUwJYbCzESqKWt12/F60fmm5456DThFZsJWEbxRjC7dDr97eDJKTKD625RyhpWyifTuiYY4dh+S3DBgfEgFG/OXMeL9un1MnYLaUGo3sD0bopOdCD2ze1l4+wutxt7ffdcnbMVSmojLImMnFPMlb9A83xsNPQLWOsyfdMr8E1TpI2EhZyh/7GTGZR3agyesHdx4tXkN33sOl17gusmOrJQUYB7yFxdlxrfsZk4RfR3kGzVCDgkegvgaYmBY4Z3LhBcDvCgjpKQEy1Mw3KauEDgHws/qFu71ynxZDG6UBSXY+u83EARN75iVe8Cke1cr11vHZl51uTT7t49n55RjCs5UKocOWNt9mrLgBaVlwN6VoDsnBLmHunNrSK1bIwKv2XfiE5Wz0TqYxaQZX3JWP/iKfpJdJfcAP3ChLThcZdiD40o6k1ax1e1yQ34CTBWHLPFqJag2Op0jPPGFo+D4QH3+xmuEOb90iLoTb4arASRJ2c2Dowbignz3oaNRjflgGZIz1KDwNfS4Uw8iVUmC7m9ulkBX47xT11OE=
+  bucket: http://villaashika-origin.s3-website-ap-northeast-1.amazonaws.com
+  local_dir: public/
+  acl: public_read
+  on:
+    repo: ami-GS/Villa-Ashika-island
