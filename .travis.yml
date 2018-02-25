@@ -26,7 +26,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: ami-GS/Villa-Ashika-island
-    branch: test
+    branch: master
 notifications:
   email:
     on_failure: always
