@@ -164,7 +164,7 @@ paginate = 6
 
 [[menu.main]]
 	name = "内観・外観一覧"
-	url = "view/"
+	url = "https://photos.app.goo.gl/ygQUvkI8yomg5JOG2"
 	weight = 3
 
 [[menu.main]]
@@ -174,5 +174,5 @@ paginate = 6
 
 [[menu.main]]
 	name = "旅行のお供に"
-	url = "amazon_links/"
+	url = "goods_for_trip/"
 	weight = 5
