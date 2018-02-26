@@ -12,8 +12,6 @@ script:
 - go build tools/make_thumbnail.go
 - "./make_thumbnail"
 - hugo
-- git add public
-- git commit -m "public"
 deploy:
   provider: s3
   access_key_id: AKIAIAUHR4QPOGZWNGAA
