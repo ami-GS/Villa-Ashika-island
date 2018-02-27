@@ -9,7 +9,7 @@ install:
 - go get -t ./...
 script:
 - mkdir static/images/thumbs
-- go build tools/make_thumbnail.go
+- go build tools/make_thumbnail/make_thumbnail.go
 - "./make_thumbnail"
 - hugo
 deploy:
