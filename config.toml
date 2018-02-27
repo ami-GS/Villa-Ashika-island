@@ -31,7 +31,7 @@ paginate = 6
 		# Use Markdown to format the string. This works nearly all over the theme
 		bio = "海鹿島（あしかじま）の民宿・貸別荘"
 		# The icons will be shown if you enter your username
-		twitter = "spf13"
+		twitter = ""
 		github = "ami-GS"
 		airbnbURL = "https://www.airbnb.com"
 		gitlab = ""

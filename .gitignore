@@ -1,4 +1,6 @@
+public
 themes
 .DS_store
 static/images/thumbs
+static/images/full-originals
 .gitkeep
