@@ -33,7 +33,7 @@ paginate = 6
 		# The icons will be shown if you enter your username
 		twitter = ""
 		github = "ami-GS"
-		airbnbURL = "https://www.airbnb.com"
+		airbnbURL = "https://www.airbnb.jp/rooms/23510482"
 		gitlab = ""
 		dribbble = ""
 		facebook = ""
@@ -98,6 +98,10 @@ paginate = 6
 	[params.recentposts]
 		hide  = false
 		title = "ニュース"
+
+	[params.calendar]
+		hide = false
+		title = "現在のご予約状況"
 
 	[params.faq]
 		hide = false

@@ -3,6 +3,6 @@
 		{{ with .Site.Params.about.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
 	</header>
 	{{ with .Site.Params.about.content }}<p>{{ . | markdownify }}</p>{{ end }}
-	<a href="https://www.airbnb.com" class="square_btn">ご予約はこちら</a>
+	<a href={{ .Site.Params.sidebar.airbnbURL }} class="square_btn">ご予約はこちら</a>
 	</ul>
 </section>
