@@ -8,6 +8,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	"sync"
 
 	"github.com/nfnt/resize"
 )
@@ -15,9 +16,9 @@ import (
 const inDir = "static/images/fulls/"
 const outDir = "static/images/thumbs/"
 
-func makeThumbnail(full os.FileInfo, finChan chan bool) {
+func makeThumbnail(full os.FileInfo, wg *sync.WaitGroup) {
 	if strings.HasPrefix(full.Name(), ".") {
-		finChan <- true
+		wg.Done()
 		return
 	}
 	fin, err := os.Open(inDir + full.Name())
@@ -31,14 +32,6 @@ func makeThumbnail(full os.FileInfo, finChan chan bool) {
 		log.Fatal("Cannot decode image:", err)
 	}
 	resizedImg := resize.Resize(370, 217, img, resize.Lanczos3)
-	/*
-		croppedImg, err := cutter.Crop(img, cutter.Config{
-			Width:   370,
-			Height:  217,
-			Options: cutter.Copy,
-			Mode:    cutter.Centered,
-		})
-	*/
 	fout, err := os.Create(outDir + full.Name())
 	if err != nil {
 		panic(err)
@@ -50,9 +43,12 @@ func makeThumbnail(full os.FileInfo, finChan chan bool) {
 			panic(err)
 		}
 	} else {
-		jpeg.Encode(fout, resizedImg, nil)
+		err = jpeg.Encode(fout, resizedImg, nil)
+		if err != nil {
+			panic(err)
+		}
 	}
-	finChan <- true
+	wg.Done()
 }
 
 func main() {
@@ -61,17 +57,10 @@ func main() {
 		panic(err)
 	}
 
-	finChan := make(chan bool)
+	var wg sync.WaitGroup
+	wg.Add(len(fulls))
 	for _, full := range fulls {
-		go makeThumbnail(full, finChan)
+		go makeThumbnail(full, &wg)
 	}
-	count := 0
-	for count != len(fulls) {
-		select {
-		case _ = <-finChan:
-			count++
-		default:
-		}
-	}
-
+	wg.Wait()
 }
