@@ -75,7 +75,7 @@ paginate = 6
 			image = "fulls/BBQ.JPG"
 			thumb = "thumbs/BBQ.JPG"
 			title = "バーベキュー可能！"
-			description = "お庭のバーベキュー場をご自由にお使いいただけます"
+			description = "庭のバーベキュー場をご自由にお使いいただけます"
 
 		[[params.portfolio.gallery]]
 			image = "fulls/kitchen.jpg"
@@ -92,23 +92,26 @@ paginate = 6
 		[[params.portfolio.gallery]]
 			image = "fulls/living.jpg"
 			thumb = "thumbs/living.jpg"
-			title = "12人同時宿泊可能"
-			description = "※最大収容人数としていますが、和室の使い方次第で若干名の追加が可能です（ご相談ください）"
+			title = "14人同時宿泊可能"
+			description = "※最大収容人数としていますが、和室の使い方で若干名の追加が可能です（ご相談ください）"
 
 	[params.recentposts]
 		hide  = false
 		title = "ニュース"
 
 	[params.calendar]
-		hide = false
+		hide = true
 		title = "現在のご予約状況"
 
 	[params.faq]
 		hide = false
 		title = "よくあるご質問"
 		[[params.faq.qa]]
+			question = "家の場所がわかりません"
+			answer = "わかりやすい場所にて待ち合わせ可能です。ご相談ください"
+		[[params.faq.qa]]
 			question = "喫煙可能ですか？"
-			answer = "全面禁煙となっています。"
+			answer = "室内禁煙です。玄関に灰皿を設置してありますので。そちらをご利用ください"
 		[[params.faq.qa]]
 			question = "観光の移動手段には何がありますか？"
 			answer = "徒歩1分のバス、10分の電車が利用可能ですが、お車のご利用をオススメいたします。"
@@ -122,7 +125,7 @@ paginate = 6
 		[params.contact]
 		hide  = false
 		title = "連絡先"
-		content = "※ご予約はAirBnBの予約システムからお願い致します。"
+		content = "※可能な限りご質問、ご予約はAirBnBのシステム経由でお願い致します。"
 
 		# This can be exact coordinates or a searchable address in google maps
 		# gmaps_address = "39.7889055,-120.5443524"
@@ -168,7 +171,7 @@ paginate = 6
 
 [[menu.main]]
 	name = "内観・外観一覧"
-	url = "https://photos.app.goo.gl/ygQUvkI8yomg5JOG2"
+	url = "https://photos.app.goo.gl/FzR8wmgPBlHZacg52"
 	weight = 3
 
 [[menu.main]]
