@@ -11,6 +11,12 @@ web for villa Ashika island
 
 detailed installation can be seen in `.travis.yml`
 
+## Create New Post
+```
+hugo new content/post/title.md
+```
+and edit headers and write down contents
+
 ## Test
 
 Under this directory
