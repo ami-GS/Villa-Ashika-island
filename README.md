@@ -3,3 +3,20 @@
 
 # Villa-Ashika-island
 web for villa Ashika island
+
+## Prerequisit
+- Hugo
+- Theme
+  - clone theme and copy the directory to `./themes/` (mkdir `./themes` at first)
+
+detailed installation can be seen in `.travis.yml`
+
+## Test
+
+Under this directory
+```
+>> hugo server
+```
+
+## Deploy
+Just push change to master, travis CI will deploy S3 as origin server.
