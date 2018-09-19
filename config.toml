@@ -75,7 +75,7 @@ paginate = 6
 			image = "fulls/BBQ.JPG"
 			thumb = "thumbs/BBQ.JPG"
 			title = "バーベキュー可能！"
-			description = "庭のバーベキュー場をご自由にお使いいただけます"
+			description = "バーベキュー場をご自由にお使いいただけます（BBQグリル千円にてレンタル）"
 
 		[[params.portfolio.gallery]]
 			image = "fulls/kitchen.jpg"
@@ -92,8 +92,8 @@ paginate = 6
 		[[params.portfolio.gallery]]
 			image = "fulls/living.jpg"
 			thumb = "thumbs/living.jpg"
-			title = "14人同時宿泊可能"
-			description = "※最大収容人数としていますが、和室の使い方で若干名の追加が可能です（ご相談ください）"
+			title = "15人同時宿泊可能"
+			description = "※最大収容人数としていますが、若干名の追加が可能です（ご相談ください）"
 
 	[params.recentposts]
 		hide  = false
@@ -108,9 +108,9 @@ paginate = 6
 		title = "よくあるご質問"
 		[[params.faq.qa]]
 			question = "家の場所がわかりません"
-			answer = "わかりやすい場所にて待ち合わせ可能です。ご相談ください"
+			answer = "AirBnBに駐車場の地図を載せております、ご参照ください"
 		[[params.faq.qa]]
-			question = "喫煙可能ですか？"
+			question = "タバコOKですか？"
 			answer = "室内禁煙です。玄関に灰皿を設置してありますので。そちらをご利用ください"
 		[[params.faq.qa]]
 			question = "観光の移動手段には何がありますか？"
@@ -180,6 +180,11 @@ paginate = 6
 	weight = 4
 
 [[menu.main]]
-	name = "旅行のお供に"
-	url = "goods_for_trip/"
+	name = "観光情報"
+	url = "http://www.choshikanko.com/"
 	weight = 5
+
+# [[menu.main]]
+# 	name = "旅行のお供に"
+# 	url = "goods_for_trip/"
+# 	weight = 6
